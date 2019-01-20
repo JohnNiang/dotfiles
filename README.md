@@ -2,14 +2,20 @@
 
 ## Copy commands
 
-### i3 base config 
+### i3 
 
 ```shell
 cp ~/.config/i3/config .
 ```
 
-### zsh config
+### zsh
 
 ```shell
 cp ~/.zshrc .
+```
+
+### redshift
+
+```shell
+cp ~/.config/redshift.conf .
 ```
