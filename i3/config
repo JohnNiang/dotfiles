@@ -168,10 +168,14 @@ bindsym $mod+m exec --no-startup-id pulseaudio-ctl mute
 bindsym $mod+greater exec --no-startup-id pulseaudio-ctl up
 bindsym $mod+less exec --no-startup-id pulseaudio-ctl down
 
+# Screenshot
+bindsym $mod+p exec --no-startup-id xfce4-screenshooter -r -s ~/Pictures
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        # status_command i3status
+        status_command exec /home/johnniang/.config/i3status/net-speed.sh
 }
 
-exec --no-startup-id synclient TapButton1=1 TapButton2=3 TapButton3=3
+exec --no-startup-id synclient TapButton1=1 TapButton2=3 TapButton3=3 HorizTwoFingerScroll=1
