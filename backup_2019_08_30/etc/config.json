@@ -1,0 +1,8 @@
+{
+  "server": "39.108.210.24",
+  "server_port": 30120,
+  "local_port": 1080,
+  "password": "GreatWall",
+  "method": "aes-256-cfb",
+  "timeout": 500
+}
